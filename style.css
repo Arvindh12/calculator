@@ -1,7 +1,16 @@
-#disp{
+#dispbox{
     background-color: #000000;
     color: white;
     height: 40vh;
+    overflow: auto;
+    word-wrap: break-word;
+    
+}
+#dispbox{
+    font-size: xxx-large;
+}
+#calcol{
+    padding: 0px 36%;
 }
 #calc{
     background-color: #212121;
