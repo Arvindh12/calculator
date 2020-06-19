@@ -1,0 +1,32 @@
+#disp{
+    background-color: #000000;
+    color: white;
+    height: 40vh;
+}
+#calc{
+    background-color: #212121;
+    color: white;
+    height: 60vh;
+}
+.col-12{
+    height: 100%;
+}
+.col-12 .row{
+    height: 20%;
+}
+.col-3{
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.col-3 p{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin: -13px 0px 0px 0px;
+}
+.col-3:hover{
+    background-color: #5f5f5f;
+}
