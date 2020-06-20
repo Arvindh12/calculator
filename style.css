@@ -28,6 +28,7 @@
     position: relative;
     font-size: 18px;
     border-radius: 3px;
+    transition: all 0.2s ease-in-out;
 }
 .col-3 p{
     position: absolute;
