@@ -3,7 +3,9 @@ var mytags = document.querySelectorAll(".col-3")
 mytags.forEach((e)=> e.addEventListener("click",(e1)=> displaytext(e1.target.innerText)))
 var brackets = 0;
 var flag = false;
-document.onkeypress= (e) => displaytext(e.key)
+document.onkeyup= (e) => {
+    //console.log(e)
+    displaytext(e.key)}
 function countdots(s){
 var res = 0;
 for (let i=0;i<s.length;i++){
@@ -33,12 +35,12 @@ function displaytext(val){
        }
        
     }
-    else if(val=="AC"|| val=="d" || val=="D")
+    else if(val=="AC"|| val=="d" || val=="D" || val=="Delete")
     {
         con.innerText=""
         brackets=0;
     }
-    else if(val=="C" || val=="c")
+    else if(val=="C" || val=="c" || val=="Backspace")
     {   if(con.innerText[con.innerText.length-1] == "(")
             brackets--;
             if(con.innerText[con.innerText.length-1] == ")")
